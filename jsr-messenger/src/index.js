@@ -3,6 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import firebase from 'firebase'
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCkOY8lHw6rhcZ8SLGMZ5GNeZCD9iPzXl0",
+    authDomain: "jsr-messenger.firebaseapp.com",
+    databaseURL: "https://jsr-messenger-default-rtdb.firebaseio.com",
+    projectId: "jsr-messenger",
+    storageBucket: "jsr-messenger.appspot.com",
+    messagingSenderId: "88983133095",
+    appId: "1:88983133095:web:8985462ca4435342427482",
+    measurementId: "G-9KP5ETPGRS"
+  };
+
+firebase.initializeApp(firebaseConfig);
 
 ReactDOM.render(
   <React.StrictMode>
